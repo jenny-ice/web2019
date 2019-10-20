@@ -1,0 +1,81 @@
+body{
+    font-size: 16px;
+    color:#EE3B3B;
+    font-family:"汉仪舒圆黑简";
+}
+
+h1{
+    text-align: center;
+    font-family:方正姚体,黑体,宋体;
+    font-size: 20px;
+	font-weight:bold;
+	color:#EE6A50;
+}
+
+h2{
+	font-size: 20px;
+	color:#099;
+	font-weight:normal;
+	font-family:黑体；
+}
+
+ul{
+	width: 570px;
+	padding:35px 35px;
+	border:2px dotted #CCC;
+	margin-top:70px;
+}
+li{
+	 list-style-image:url("../images/dot.png");
+	height:30px;
+	line-height:30px;
+	font-size: 20px;
+	color:#FF6347;
+	border-bottom:1px dotted #DDD;
+}
+
+p{
+	line-height:2em;
+}
+
+.nav{background-color:#FF6347;
+	 margin-left:15%;
+	 margin-right:15%;
+	 text-align:center;
+	 font-size:18px;
+}
+
+.copyright{
+	color:#EEB422;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#container{
+		border-width: 80%;
+		padding:5px 20px;
+		margin:0px auto;
+		min-height:700px;
+		border:2px solid #FF6347;
+		
+    }
+.photo{
+	text-align: center;
+	font:20px;
+}
+
+.photofont{
+	color:#B48FBC;
+	text-align: center;
+	font-weight:bold;
+}
+
+.location{
+	padding:0 249px;
+}
+
+.location1{
+	padding:0 249px;
+  width: 520px;
+}/* CSS Document */
+
