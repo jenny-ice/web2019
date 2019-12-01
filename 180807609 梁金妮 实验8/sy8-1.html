@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>项目一</title>
+	<style>
+		table{width:600px;}
+		fieldset{width:600px;padding:20px;margin-bottom:25px;}
+		h2{text-align: center;
+		margin-top: 5px;
+		margin-bottom: 30px;}
+		form{
+		background-color: #515151;
+		color:#F4F4F4;
+		width:650px;
+			margin: 0 auto;
+	padding: 20px;
+		}
+		first{
+		width:200px;}
+		
+		second{
+	width:200px;}
+		
+		.third{width:200px;}
+		tr{width:300px;}
+		td{height:50px;width:297px;}
+	
+		[type="text"]{
+			width:200px;
+			height:25px;
+		}
+		[type2="text"]{
+			width:400px;
+			height:25px;
+		}
+		[type1="text"]{
+			width:50px;
+			height:25px;
+		}
+		[type="checkbox"],[type="radio"]{
+			display:inline;
+			vertical-align: middle;
+		
+		}
+		[type="submit"]{
+			display:inline;
+			vertical-align: middle;
+			
+		}
+		select{width:180px;height:20px;}
+		qd1{
+		display:inline;
+			width:100px;
+			
+		}
+		div{margin-left: 150px;margin-right: 200px;
+		display:inline;
+			width:100px;}
+		
+	</style>
+</head>
+
+<body>
+	<form>
+		<h2>增加快递信息</h2>
+		<fieldset>
+		<legend>发货单</legend>
+	<table>
+			<tr>
+		<td class="first">发货人:&nbsp;<input type="text"></td>
+				
+				<td class="second">地址:<input type="text"></td>
+		</tr>	
+		<tr>
+		<td class="first">电话:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></td>
+				
+				<td class="second">邮编:<input type="text"></td>
+		</tr>
+	</table>
+			
+	</fieldset>
+		<fieldset>
+		<legend>收货单</legend>
+	<table>
+			<tr>
+		<td class="first">收货人:<input type="text"></td>
+				
+				<td class="second">地址:<input type="text"></td>
+		</tr>	
+		<tr>
+		<td class="first">电话:&nbsp;&nbsp;&nbsp;<input type="text"></td>
+				
+				<td class="second">邮编:<input type="text"></td>
+			
+		</tr>
+		<tr>
+		<td colspan="3">地区: &nbsp;&nbsp;<select><option value="bj" selected>北京</option>
+			<option value="tj" selected>天津</option>
+			<option value="hb" selected>河南</option>
+			<option value="hn" selected>河北</option>
+			<option value="zj" selected>浙江</option>
+			<option value="js" selected>江苏</option></select></td>
+			
+		</tr>
+		<tr>
+		<td colspan="4">包装:       <input type="checkbox" name="account1" value="1"><lable for="account1">纸箱</lable>
+		<input type="checkbox" name="account2" value="2"><lable for="account2">木箱</lable>
+		<input type="checkbox" name="account3" value="3"><lable for="account3">快递袋</lable>
+		<input type="checkbox" name="account4" value="4"><lable for="account4">其他</td></lable></tr>
+		<tr><td colspan="4">付款方式:       <input type="radio" name="method1" value="1" id="method1"><lable for="method1">现金</lable><input type="radio" name="method2" value="2" id="method2"><lable for="method1">支付宝</lable><input type="radio" name="method3" value="3" id="method3"><lable for="method1">网银</lable><input type="radio" name="method4" value="4" id="method4"><lable for="method4">ATM</lable></td></tr>
+		
+	</table>
+			
+	</fieldset>
+		<fieldset>
+		<legend>货物信息</legend>
+	<table>
+			<tr>
+		<td>货物名称:<input type2="text"></td>
+		</tr>	
+		<tr>
+		<td>数量:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type1="text">
+				重量:<input type1="text">
+			发货时间:<input type1="text"></td>
+		</tr>
+	</table>
+			
+	</fieldset><div class="qd1">
+		<div><input type="submit" name="确定" value="确定"><qd for=""></qd>
+<input type="submit" name="确定" value="取消"><qd for=""></qd></div>
+	</div>
+		</form>
+</body>
+</html>
