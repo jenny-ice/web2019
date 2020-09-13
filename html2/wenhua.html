@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>浙江茶文化之旅</title>
+	<style>
+	.web_bg{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  min-width: 1000px;
+  z-index:-10;
+  zoom: 1;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+		 background-size=100%;
+}
+		
+		.a1 {
+  position: relative;
+  width: 1000px;
+  height:620px;
+  margin: 0 auto;
+  
+}
+				.title{
+	position:absolute;
+	left:750px;	
+	top:430px;
+}
+					.title2{
+	position:absolute;
+	left:750px;	
+	top:360px;
+}
+		.title:hover{
+	transform:scale(1.1);
+	cursor:pointer;
+	border:none;
+}
+			.title2:hover{
+	transform:scale(1.1);
+	cursor:pointer;
+	border:none;}
+		[type="button"]{
+			
+			background-image: url(images/next.png);
+			width:178px;	
+	        height:63px;
+			border: none;
+			
+		}
+		
+	#daohang1{
+		position: absolute;
+		top:430px;
+		left:130px;
+	}
+	#daohang2{
+		position: absolute;
+		top:430px;
+		left:270px;
+	}
+	#daohang3{
+		position: absolute;
+		top:430px;
+		left:410px;
+	}
+	#daohang4{
+		position: absolute;
+		top:430px;
+		left: 550px;
+	}
+		#p1{
+		position: absolute;
+		top:415px;
+		left: 190px;
+		font-family: 幼圆;
+		font-size: 20pt;
+		font-weight: bolder;
+	}
+	#p2{
+		position: absolute;
+		top:415px;
+		left: 340px;
+		font-family: 幼圆;
+		font-size: 20pt;
+		font-weight: bolder;
+	}
+	#p3{
+		position: absolute;
+		top:415px;
+		left:470px;
+		font-family: 幼圆;
+		font-size: 20pt;
+		font-weight: bolder;
+	}
+	#p4{
+		position: absolute;
+		top:415px;
+		left: 610px;
+		font-family: 幼圆;
+		font-size: 20pt;
+		font-weight: bolder;
+	}
+	.sec_on{
+		color:#F4F4F4;
+	}
+	.sec_off{
+		color:#000000;
+	}
+	p:hover{
+		cursor: pointer;
+	}
+		.word{
+		
+		font-family:隶书;
+		overflow: hidden;
+	}
+	#w1{
+		position: absolute;
+		top:40px;
+		left: 180px;
+		font-size: 20pt;
+	}
+	#w2{
+		position: absolute;
+		top:40px;
+		left: 170px;
+		font-size: 19pt;
+	}
+	#w3{
+		position: absolute;
+		top:40px;
+		left: 130px;
+		font-size: 19pt;
+	}
+	#w4{
+		position: absolute;
+		top:40px;
+		left: 130px;
+		font-size: 20pt;
+	}
+		
+		</style>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function show(num)
+	{
+		for(var i=1;i<=4;i++)
+			{
+				document.getElementById("w1").style.display="none";
+				document.getElementById("w2").style.display="none";
+				document.getElementById("w3").style.display="none";
+				document.getElementById("w4").style.display="none";
+			}
+		document.getElementById("w"+num).style.display="block";
+	}
+	
+function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
+{
+    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
+}
+	
+
+</script>
+</head>
+
+<body>
+<div class="a1" style="background-image: url(images/bg2.png);">
+<div class="title"><a href="ditu.html"><img src="images/next.png" alt="" id="anniu1"></a>
+
+	</div>	
+	<div class="title2"><a href="index.html"><img src="images/sy.png" alt="" id="anniu"></a>
+	
+	</div>	
+<div>
+	<img src="images/lv.png" alt="" width="178px" height="63px" id="daohang1"  onClick="show(1);javascript:p1.className='sec_on';p2.className='sec_off';p3.className='sec_off';p4.className='sec_off';">
+	</div>
+	<p id="p1" class="sec_on" onclick="show(1);javascript:p1.className='sec_on';p2.className='sec_off';p3.className='sec_off';p4.className='sec_off';">起源</p>
+	
+	
+	<div>
+	<img src="images/lv.png" alt="" width="178px" height="63px" id="daohang2" onClick="show(2);javascript:p2.className='sec_on';p1.className='sec_off';p3.className='sec_off';p4.className='sec_off';">
+	</div>
+	<p id="p2" class="sec_off" onclick="show(2);javascript:p2.className='sec_on';p1.className='sec_off';p3.className='sec_off';p4.className='sec_off';">发明</p>
+	
+	<div>
+	<img src="images/lv.png" alt="" width="178px" height="63px" id="daohang3" onClick="show(3);javascript:p3.className='sec_on';p1.className='sec_off';p2.className='sec_off';p4.className='sec_off';">
+	</div>
+	<p id="p3" class="sec_off" onclick="show(3);javascript:p3.className='sec_on';p1.className='sec_off';p2.className='sec_off';p4.className='sec_off';">分类</p>
+	
+	<div>
+	<img src="images/lv.png" alt="" width="178px" height="63px" id="daohang4" onClick="show(4);javascript:p4.className='sec_on';p1.className='sec_off';p2.className='sec_off';p3.className='sec_off';">
+	</div>
+	<p id="p4" class="sec_off" onclick="show(4);javascript:p4.className='sec_on';p1.className='sec_off';p2.className='sec_off';p3.className='sec_off';">功能</p>
+	
+	  <div class="word">
+	<div id="w1">
+	<p align="center"><b>茶的起源</b></p>
+	<p>
+		中国是茶的故乡，也是茶文化的发源地。<br>
+		中国茶的发现和利用已有四千七百多年的历史，<br>且长盛不衰，传遍全球。<br>
+		中国茶文化糅合佛、儒、道诸派思想，独成一体。<br>
+		“开门七件事，柴米油盐酱醋茶”，由此可见茶<br>已深入人民各阶层。<br>
+		
+	</p> 
+	
+	 </div>
+	<div id="w2" style="display: none">
+	<p align="center"><b>茶的发明方式</b></p>
+	<p>&nbsp;&nbsp;浙江余姚田螺山遗址出土的树根，经初步判断是<br>茶树类植物，中国最早种茶的历史可能被改写；茶<br>字的读音源于巴南人，巴渝是茶文化发祥地。<br>&nbsp;&nbsp;“最初利用茶的方式方法，可能是作为口嚼的食<br>料，也可能作为烤煮的食物，同时也逐渐为药料饮<br>用。”这几种方式的比较和积累最终就发展成为“饮<br>茶”是最好的方式。</p>	
+	</div>
+	
+	<div id="w3" style="display: none">
+	<p align="center"><b>茶的分类</b></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据陈宗懋主编《中国茶经》的分类法，分为：绿茶、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;红茶、乌龙茶、白茶、黄茶、黑茶。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国十大名茶：西湖龙井、江苏碧螺春、安徽毛峰、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;湖南君山银针、信阳毛尖、安徽祁门红、安徽瓜片、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;都匀毛尖、武夷岩茶、福建铁观音。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名茶之所以有名，主要在茶叶的色、香、味、形四个<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方面。茶以“色绿、香郁、味醇、形美”四绝著称于<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;世。也有一些名茶往往以其一二个特色而闻名。
+	</p></div>
+	
+	<div id="w4" style="display: none">
+	<p align="center"><b>茶的功能作用</b></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文化的社会功能主要表现在发扬茶德、传播茶道、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文化艺术 、修身养性、陶冶情操、促进民族团结、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表现社会进步和发展经济贸易等。茶德是经过几千<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;年积淀下来的被历代人们所推崇的茶内在具备的美<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好品性。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;茶文化具有的传统主要有热爱祖国、无私奉献、坚<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;韧不拔、谦虚礼貌、勤奋节俭和相敬互让等。
+	</p>
+	
+	</div>
+	
+	</div></div>
+</body>
+</html>
