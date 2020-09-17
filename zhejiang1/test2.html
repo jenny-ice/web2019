@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>课后小测验</title>
+	<style type="text/css">
+		
+		 *{margin:0;padding:0;}
+        li{list-style:none;}
+        i{font-style: normal;}
+	
+	.a1 {
+  position: relative;
+  width: 1000px;
+  height:620px;
+  margin: 0 auto;
+  
+}
+		.title{
+	position:absolute;
+	left:650px;	
+	top:330px;
+}
+			.title:hover{
+	transform:scale(1.1);
+	cursor:pointer;
+	border:none;
+}
+		
+	.web_bg{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  min-width: 1000px;
+  z-index:-10;
+  zoom: 1;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+		 background-size=100%;
+}
+		
+		#timu{
+		position: absolute;
+		top:120px;
+		left:250px;
+		width: 580px;
+		height: 250px;
+		font-family: 幼圆;
+	}
+		#timu ul{
+		font-size: 18pt;
+	}
+		#anniu1{
+		position: absolute;
+		top:90px;
+		left:30px;
+	}
+		
+	#anniu2{
+		position: absolute;
+		top:90px;
+		left:220px;
+	}
+	#anniu3{
+		position: absolute;
+		top:150px;
+		left:30px;
+	}
+	#anniu4{
+		position: absolute;
+		top:150px;
+		left:220px;
+	}
+	#tijiao{
+		position: absolute;
+		top:200px;
+		left:250px;
+		width: 70px;
+		height: 40px;
+		font-size: 18pt;
+		font-weight: bolder;
+		font-family: 幼圆;
+		background-color:#169751;
+		color:#050303;
+		border-radius: 5px;
+	}
+	#tijiao:hover{
+		width: 72px;
+		height: 42px;
+	}
+		#true{
+		position: absolute;
+		top:80px;
+		left: 300px;
+	}
+	#false1{
+		position: absolute;
+		top:80px;
+		left: 100px;
+	}
+	#false2{
+		position: absolute;
+		top:140px;
+		left: 100px;
+	}
+	#false3{
+		position: absolute;
+		top:140px;
+		left: 300px;
+	}
+	#tishi{
+		position: absolute;
+		top: 206px;
+		left: 300px;
+		font-size: 18pt;
+		color: #DF4446;
+		font-weight: bolder;
+	}
+		
+		.xuanzhong{
+		color: #F40206;
+	}
+	.buxuanzhong{
+		color: #000000;
+	}
+	
+		</style>
+	
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function myfunction()
+	{
+		var daan=document.myform.answer.value;
+		var audio1 = document.getElementById('music1'); 
+		var audio2 = document.getElementById('music2'); 
+
+		if(daan=="answer1")
+			{
+				document.getElementById("true").style.display="block";
+				document.getElementById("false1").style.display="none";
+				document.getElementById("false2").style.display="none";
+				document.getElementById("false3").style.display="none";
+				audio1.play(); 
+			}
+		else if(daan=="answer2")
+			{
+				document.getElementById("false1").style.display="block";
+				document.getElementById("true").style.display="none";
+				document.getElementById("false2").style.display="none";
+				document.getElementById("false3").style.display="none";
+				audio2.play(); 
+			}
+		else if(daan=="answer3")
+			{
+				document.getElementById("false2").style.display="block";
+				document.getElementById("true").style.display="none";
+				document.getElementById("false1").style.display="none";
+				document.getElementById("false3").style.display="none";
+				audio2.play(); 
+			}
+		else if(daan=="answer4")
+			{
+				document.getElementById("false3").style.display="block";
+				document.getElementById("true").style.display="none";
+				document.getElementById("false1").style.display="none";
+				document.getElementById("false2").style.display="none";
+				audio2.play(); 
+			}
+		else
+			{
+				document.getElementById("tishi").style.display="block";
+				document.getElementById("true").style.display="none";
+				document.getElementById("false1").style.display="none";
+				document.getElementById("false2").style.display="none";
+				document.getElementById("false3").style.display="none";
+				audio2.play(); 
+			}
+	}
+function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
+{
+    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
+}
+</script>
+	</head>
+	
+	<body>
+		
+		<div class="a1" style="background-image: url(images/bg22.png);">
+			<div class="title"><a href="test3.html"><img src="images/next.png" alt="" id="anniu1"></a>
+
+	</div>	
+		<div id="timu">
+	<h3>中国茶文化主要糅合佛、（&nbsp;&nbsp;）道思想</h3>
+	<form action="" method="post" name="myform" id="myform">
+		<ul style="list-style: none">
+		<li id="anniu1">
+		<input type="radio" value="answer2" name="answer" onClick="javascript:anniu1.className='xuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">A.法</li>
+		<li id="anniu2">
+		<input type="radio" value="answer1" name="answer" onClick="javascript:anniu2.className='xuanzhong';anniu1.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">B.儒</li>
+		<li id="anniu3">
+		<input type="radio" value="answer3" name="answer" onClick="javascript:anniu3.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu4.className='buxuanzhong';">C.墨</li>
+		<li id="anniu4">
+		<input type="radio" value="answer4" name="answer" onClick="javascript:anniu4.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';">D.兵</li>
+		</ul>
+		<input type="button" value="提交" name="submit" id="tijiao" onClick="myfunction()">
+		<img src="images/true.png" alt="" width="50px" height="50px" id="true" style="display: none">
+	  <img src="images/false.png" alt="" width="40px" height="40px" id="false1" style="display: none">
+	  <img src="images/false.png" alt="" width="40px" height="40px" id="false2" style="display: none">
+	  <img src="images/false.png" alt="" width="40px" height="40px" id="false3" style="display: none">
+	  <div id="tishi" style="display: none">未选中答案</div>
+	</form>
+		
+	<audio id="music1" controls preload hidden>
+	<source src="music/true.mp3" type="audio/mp3">	
+	</audio>
+	<audio id="music2" controls preload hidden>
+	<source src="music/false.mp3" type="audio/mp3">	
+	</audio>
+	</div></div>
+		</body>
+	</html>
