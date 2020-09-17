@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>茶的冲泡方式</title>
+	
+<style>
+	 *{margin:0;padding:0;}
+        li{list-style:none;}
+        i{font-style: normal;}
+	
+	.a1 {
+  position: relative;
+  width: 1000px;
+  height:620px;
+  margin: 0 auto;
+  
+}
+		#daohang{
+		position: absolute;
+		top:5px;
+		left:250px;
+	}
+	
+        #wrap{
+            position:absolute;
+            width:600px;
+            height:400px;
+           top:140px;
+		left:200px;
+            
+        }
+        .title,.num{
+            position: absolute;
+            width:100%;
+            left:0;
+            line-height:30px;
+            text-align: center;
+            z-index:99;
+            color:#fff;
+            background-color: rgba(0,0,0,.5);
+        }
+        .num{
+            top:0;
+        }
+        .title{
+            bottom:0;
+        }
+        ul li{
+            position:absolute;
+            display:none;
+            top:0;
+            left:0;
+            width:100%;
+            height:400px;
+        }
+        ul li.on{
+            display:block;
+        }
+        ul li img{
+            width:100%;
+            height:100%;
+            overflow:hidden;
+        }
+        .btn span{
+            position: absolute;
+            padding:15px 10px;
+            color:#fff;
+            top:50%;
+            background-color: rgba(0,0,0,.5);
+            cursor:pointer;
+        }
+        .btn .left{
+            left:0;
+        }
+        .btn .right{
+            right:0;
+        }
+	
+	
+	.title2{
+	position:absolute;
+	left:20px;	
+	top:140px;
+}
+	
+		.title2:hover{
+	transform:scale(1.1);
+	cursor:pointer;
+	border:none;
+}
+	
+	p
+	{
+		font-family: 楷体;
+		font-size: 20px;
+	}
+	</style>
+</head>
+
+<body>
+<div class="a1" style="background-image: url(images/bg2-2.png);">
+	<div class="title2"><a href="index.html"><img src="images/sy.png" alt="" id="anniu"></a>
+	
+	</div>
+<div style="text-align:center"><img src="images/chongpao 1.png" id="daohang"  ></div>
+	  <div id="wrap">
+        <div class="num">第<i>一</i>步骤</div>
+        <ul>
+            <li><img src="images/01.jpg" alt=""><p>根据品饮人数准备好茶杯碗以及茶叶罐，茶则，茶匙，赏茶盘，茶巾以及烧水壶。</p></li>
+            <li><img src="images/022.gif" alt=""><p>用沸水冲淋所有茶具，随后即将茶壶、茶杯沥干，温具的目的是提高茶具温度，使茶叶冲泡后温度相对稳定，同时还起到清洁的作用。</p></li>
+            <li><img src="images/02.gif" alt=""><p>置茶就是放茶叶，往泡茶的壶里置入一定数量的茶叶，茶叶的数量随不同茶叶而不同的，还有随个人喜好而放。</p></li>
+            <li><img src="images/03.gif" alt=""><p>水温85-90℃，冲泡时将水壶放低，以螺旋的方式轻缓注水，使茶与水更好更快地融合。冲泡过程，要求水壶高悬，使水流有冲击力，并有曲线的美感。</p></li>
+            <li><img src="images/04.gif" alt=""><p>观察茶叶有略微泡开，3秒左右出汤到公道杯，出汤前，适当倾斜出缝隙，手指只抓盖碗的边缘，轻扣盖钮，三点一线地拿稳盖碗。</p></li>
+            <li><img src="images/05.gif" alt=""><p>将茶水从泡茶具中倒出至公道杯</p></li>
+            <li><img src="images/06.gif" alt=""><p>倒茶时不能一次倒满一杯，至七分满处为好。用茶壶轮流给几杯同时倒茶，当将要倒完时，把剩下的茶汤分别点入各杯中，俗称“韩信点兵”。</p></li>
+            <li><img src="images/07.jpg" alt=""><p>一般是先闻香，再观色、啜饮。饮一小口，让茶汤在嘴内回荡，与味蕾充分接触，然后徐徐咽下，并用舌尖抵住齿根并吸气，回味茶的甘甜。</p></li>
+           
+        </ul>
+        <div class="btn">
+            <span class="left"> &lt; </span>
+            <span class="right"> &gt; </span>
+        </div>
+        <div class="title">备具</div>
+    </div></div>
+	
+    <script>
+        let aLi = document.getElementsByTagName("li"), //获取全部列表项
+            aSpan = document.getElementsByTagName("span"),//获取两个按钮对象
+            oTitle = document.getElementsByClassName("title")[0],//获取下方标题对象
+            oI = document.getElementsByTagName("i")[0], //获取上方序号文本对象
+            length = aLi.length, //获取列表的长度
+            i = 0,            //当前下标为0
+            arr1 = ["一","二","三","四","五","六","七","八"],
+            arr2 = ["备具","温具","置茶","冲泡","盖碗拿法","出汤","倒茶","品茶"];
+        aSpan[1].onclick = function(){  //向右切换按钮的单击事件函数
+            aLi[i].className = "";  //隐藏当前列表项
+            i++;
+            if(i>=length){     //如果超出列表最大下标范围，则下标重置为0
+                i = 0;
+            }
+            aLi[i].className = "on";   //显示下一个列表项
+            oI.innerHTML = arr1[i];    //更新上方序号文本对象
+            oTitle.innerHTML = arr2[i]; //更新下方标题对象
+        }
+        aSpan[0].onclick = function(){  //向左切换按钮的单击事件函数
+            aLi[i].className = "";
+            i--;
+            if(i<0){   //如果超出列表最小下标范围，则下标设置为最后一项
+                i = length-1;
+            }
+            aLi[i].className = "on";
+            oI.innerHTML = arr1[i];
+            oTitle.innerHTML = arr2[i];
+        }
+    </script>
+</body>
+</html>
